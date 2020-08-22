@@ -10,19 +10,27 @@ int main()
 	scanf_s("%d", &b);
 
 	printf("Greatest common divisor : ");
-	for (int i = 2; i <= maxvalue(a, b); ) 
+	if (a == 0 || b == 0)
 	{
-		if (a % i == 0 && b % i == 0) 
+		x = 0;
+	}
+	else
+	{
+		for (int i = 1; i <= maxvalue(a, b); ) 
 		{
-			x *= i;
-			a /= i;
-			b /= i;
-		}
-		else 
-		{
-			i++;
+			if (a % i == 0 && b % i == 0) 
+			{
+				x *= i;
+				a /= i;
+				b /= i;
+			}
+			else 
+			{
+				i++;
+			}
 		}
 	}
+	
 	printf("%d", x);
 	return 0;
 }
