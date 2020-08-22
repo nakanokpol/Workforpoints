@@ -27,7 +27,7 @@ int main()
 		printf("%d", x);
 		return 0;
 	}
-	else if (a != 0 && b != 0)
+	else if (a > 0 && b > 0)
 	{
 		for (int i = 2; i <= maxvalue(a, b); ) 
 		{
