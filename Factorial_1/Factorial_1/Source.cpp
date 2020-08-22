@@ -1,10 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 int main()
 {
 	int x;
 	printf("Enter number : ");
-	scanf("%d", &x);
+	scanf_s("%d", &x);
 	if (x == 0 || x == 1)
 	{
 		printf("Factorial Result : %d", x);
