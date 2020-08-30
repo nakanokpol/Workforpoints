@@ -4,9 +4,9 @@ int main()
 {
 	int x;
 	scanf_s("%d", &x);
-	for (int i = 1; i <= x -1 ; i++)
+	for (int i = 1; i < x -1 || i == x - 1; i++)
 	{
-		for (int k = 1; k <= i; k++)
+		for (int k = 1; k < i || k == i ; k++)
 		{
 			printf("* ");
 		}
@@ -14,7 +14,7 @@ int main()
 		{
 			printf("  ");
 		}
-		for (int k = 1; k <= i; k++)
+		for (int k = 1; k < i || k == i; k++)
 		{
 			printf("* ");
 		}
@@ -25,9 +25,9 @@ int main()
 		printf("* ");
 	}
 	printf("\n");
-	for (int i = x-1; i >= 1 ; i--)
+	for (int i = x-1; i > 1 || i == 1 ; i--)
 	{
-		for (int k = i; k >=1; k--)
+		for (int k = i; k > 1 || k == 1; k--)
 		{
 			printf("* ");
 		}
@@ -35,7 +35,7 @@ int main()
 		{
 			printf("  ");
 		}
-		for (int k = i; k >= 1; k--)
+		for (int k = i; k > 1 || k == 1; k--)
 		{
 			printf("* ");
 		}
