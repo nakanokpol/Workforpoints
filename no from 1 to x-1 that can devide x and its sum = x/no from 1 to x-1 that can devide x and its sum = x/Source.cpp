@@ -4,9 +4,9 @@ int b(int);
 
 int main()
 {
-	int sum;
-
-	for (int i = 1; i <= 10000; i++)
+	int sum, n;
+	scanf_s("%d", &n);
+	for (int i = 1; i <= n; i++)
 	{
 		if (i == b(i)) // loop in loop
 		{
