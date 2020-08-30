@@ -6,7 +6,7 @@ int main()
 {
 	int sum, n;
 	scanf_s("%d", &n);
-	for (int i = 1; i <= n; i++)
+	for (int i = 1; i < n || i==n ; i++)
 	{
 		if (i == b(i)) // loop in loop
 		{
