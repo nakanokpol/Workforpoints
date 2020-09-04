@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 //int b(int);
-int a(int);
+/*int a(int);
 
 int main()
 {
@@ -59,7 +59,7 @@ int b(int num)
 	return sum;
 }*/
 
-/*int main()
+int main()
 {
 	int x;
 	scanf_s("%d", &x);
@@ -100,4 +100,4 @@ int b(int num)
 		}
 		printf("\n");
 	}
-}*/
+}

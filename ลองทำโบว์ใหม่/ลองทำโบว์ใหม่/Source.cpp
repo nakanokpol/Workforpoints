@@ -9,19 +9,11 @@ int main()
 	{
 		for (int k = 1; k <= l;k++)
 		{
-			if ((k <= i || k > l - i) && i<=n)
+			if (((k <= i || k > l - i) && i<=n)|| ((k <= l - (i - 1) || k > i - 1) && i > n))
 			{
 				printf("*");
 			}
-			else if (i <= n)
-			{
-				printf("x");
-			}
-			if ((k <= l-(i-1) || k > i-1) && i>n)
-			{
-				printf("*");
-			}
-			else if (i > n)
+			else
 			{
 				printf("x");
 			}
