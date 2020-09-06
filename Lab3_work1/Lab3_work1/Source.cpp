@@ -1,18 +1,20 @@
 #include<stdio.h>
 
-//int b(int);
-/*int a(int);
+int b(int);
+/*void a(int);
 
 int main()
 {
 	int num;
 	scanf_s("%d", &num);
+	int x = num;
+	a(num);
 
-	printf("%d", a(num));
+	if(x<10)printf("%d", x);
 	return 0;
 }
 
-int a(int num)
+void a(int num)
 {
 	int R=0;
 	if (num >= 10)
@@ -21,17 +23,18 @@ int a(int num)
 		{
 			R += num % 10;
 		}
+		printf("%d\n", R);
 		a(R);
 	}
 	else
 	{
-		return num;
+		printf("%d", num);
 	}
-}
+}*/
 
-/*int main()
+int main()
 {
-	int sum;
+	//int sum;
 	
 	for (int i = 1; i <= 10000; i++)
 	{
@@ -57,9 +60,9 @@ int b(int num)
 		//printf("sum = %d\n", sum);
 	}
 	return sum;
-}*/
+}
 
-int main()
+/*int main()
 {
 	int x;
 	scanf_s("%d", &x);
@@ -100,4 +103,4 @@ int main()
 		}
 		printf("\n");
 	}
-}
+}*/
