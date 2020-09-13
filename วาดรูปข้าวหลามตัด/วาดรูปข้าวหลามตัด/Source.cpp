@@ -1,10 +1,17 @@
 #include<stdio.h>
 
-int main()
+void DRAW(int);
+
+void main()
 {
-	int n, p;
+	int n;
 	scanf_s("%d", &n);
-	p = 2 * n - 1;
+	DRAW(n);
+}
+
+void DRAW(int n)
+{
+	int p = 2 * n - 1;
 	for (int i = 1;i <= p;i++)
 	{
 		for (int j = 1;j <= p;j++)
@@ -20,5 +27,4 @@ int main()
 		}
 		printf("\n");
 	}
-	return 0;
 }
