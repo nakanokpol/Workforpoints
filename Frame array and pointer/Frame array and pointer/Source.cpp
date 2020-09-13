@@ -1,17 +1,20 @@
 #include<stdio.h>
 
-void FRAME(int);
-
-void main()
+int main()
 {
-	int n;
-	scanf_s("%d", &n);
-	FRAME(n);
-}
+	int x=0;
+	int n[x];
+	scanf("%d", &x);
+	int* p;
+	for (int i = 1; i <= x; i++)
+	{
 
-void FRAME(int n)
-{
-	for (int i = 1; i <= n; i++)
+	}
+	/*scanf_s("%d", &);
+	p = n;*/
+
+	printf("%d", *p);
+	/*for (int i = 1; i <= n; i++)
 	{
 		for (int j = 1; j <= n;j++)
 		{
@@ -25,5 +28,6 @@ void FRAME(int n)
 			}
 		}
 		printf("\n");
-	}
+	}*/
+	return 0;
 }
