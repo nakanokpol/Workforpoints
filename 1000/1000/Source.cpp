@@ -1,7 +1,6 @@
 #include<stdio.h>
 
 int F(int);
-
 int main()
 {
 	int N, sum=0;
