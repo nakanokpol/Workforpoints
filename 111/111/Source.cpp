@@ -23,6 +23,10 @@ void DRAW(int b)
 		for (int i = 0; i <= b - 1; i++)
 		{
 			scanf_s("%d", &a[i]);
+			if (a[i] > 9 || a[i] < 0)
+			{
+				printf("INPUT IS 0 to 9 ONLY");
+			}
 		}
 
 		printf("\n");
