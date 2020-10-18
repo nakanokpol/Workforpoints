@@ -47,11 +47,11 @@ int main()
 			printf("\nx = %.3f/%.3f", -a[1], 2 * a[0]);
 			printf("\tor\tx = %f", x[1]);// x[0]
 		}
-		else if ((x[0] == x[1] && t != 0) || (x[0] != x[1] && t == 0))
-		{
-			printf("Unknown ERROR !!!");// no way to show this error
-			return 0;
-		}
+		//else if ((x[0] == x[1] && t != 0) || (x[0] != x[1] && t == 0))
+		//{
+		//	printf("Unknown ERROR !!!");// no way to show this error
+		//	return 0;
+		//}
 		else
 		{
 			//printf("\n%.3f\n", s);//
