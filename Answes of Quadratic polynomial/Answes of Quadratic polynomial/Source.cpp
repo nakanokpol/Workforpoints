@@ -49,7 +49,7 @@ int main()
 		}
 		else if ((x[0] == x[1] && t != 0) || (x[0] != x[1] && t == 0))
 		{
-			printf("Unknown ERROR !!!");
+			printf("Unknown ERROR !!!");// no way to show this error
 			return 0;
 		}
 		else
