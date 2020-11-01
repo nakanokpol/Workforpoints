@@ -16,20 +16,23 @@ int main()
 	while (*p != '\0')
 	{
 		
-		if (*p < '0' || *p > '9')
+		if ((*p > 'a' && *p < 'z') || (*p > 'A' && *p < 'Z'))
 		{
-			
 			printf("%c", *p);
 			b[i] = *p;
 			i++;
 		}
 		p++;
 	}
+	if (i >= 1)
+	{
+		--i;//i บวกท้ายลูปสุดท้าย เลขเลยเกินมา 1
+	}
 
-	--i;//i บวกท้ายลูปสุดท้าย เลขเลยเกินมา 1
-
+	
 	char* q = b;
-	if (*q == '\0')
+
+	if (i == 0)
 	{
 		printf("\nERROR::DON'T_HAVE_ANY_CHARACTER\nnot Palindrome");
 		return 0;
