@@ -4,7 +4,6 @@ int main()
 {
 	char a[100];
 	char b[100];
-	char checkNum[100];
 
 	printf("Your Inputs : ");
 	scanf_s("%s", a, 99);
@@ -27,7 +26,6 @@ int main()
 		}
 		if (*p >= '0' && *p <= '9')
 		{
-			checkNum[t] = *p;
 			t++;
 		}
 
@@ -43,10 +41,6 @@ int main()
 	
 	char* q = b;
 
-	if (k >= 1)
-	{
-		--i;//i บวกท้ายลูปสุดท้าย เลขเลยเกินมา 1
-	}
 	if (i >= 1)
 	{
 		--i;//i บวกท้ายลูปสุดท้าย เลขเลยเกินมา 1
