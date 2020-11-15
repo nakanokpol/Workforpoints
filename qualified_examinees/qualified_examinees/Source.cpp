@@ -112,25 +112,23 @@ int main()
 		printf("\nAverage : %.2f\n", avr);
 
 		int K = 0;
-
-		p_id = id;
-		p_score = score;
-
-		for (int i = 0; i < N; i++)
-		{
-			if (id[i] >= avr)
-			{
-				++K;
-			}
-		}
-		printf("Pass : %d\n", K);
-
 		int n = 0;
 
 		for (int i = 0; i < N; i++)
 		{
 			if (score[i] >= avr)
 			{
+				++K;
+			}
+		}
+		printf("Pass : %d\n", K);
+
+		for (int i = 0; i < N; i++)
+		{
+			if (score[i] >= avr)
+			{
+				++n;
+
 				if (id[i] <= 9)
 				{
 					printf("0000");
@@ -147,12 +145,9 @@ int main()
 				{
 					printf("0");
 				}
-
 				printf("%d %d", id[i], score[i]);
 
-				++n;
-
-				if(n < K)
+				if (n < K)
 				{
 					printf("\n");
 				}
