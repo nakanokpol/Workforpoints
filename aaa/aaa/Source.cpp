@@ -28,7 +28,6 @@ int main()
 		{
 			t++;
 		}
-
 		p++;
 		k++; // the number of loop
 	}
