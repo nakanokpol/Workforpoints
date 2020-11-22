@@ -54,6 +54,9 @@ int main()
 	}
 	else
 	{
+		int* p_telPassed = telPassed;
+		int* p_customerId = customerId;
+
 		int num = 0;
 
 		for (int i = 0; i < N; i++)
@@ -66,8 +69,8 @@ int main()
 
 			if (priceCheck(temp_cost))
 			{
-				telPassed[num] = temp_tel;
-				customerId[num] = i;
+				*(p_telPassed + num) = temp_tel;
+				*(p_customerId + num) = i;
 				num++;
 			}
 		}
