@@ -52,7 +52,7 @@ int main()
 	{
 		return 0;
 	}
-	else
+	else if (NumCustomerCheck(N))
 	{
 		int* p_telPassed = telPassed;
 		int* p_customerId = customerId;
